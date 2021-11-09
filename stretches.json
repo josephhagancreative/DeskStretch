@@ -1,0 +1,25 @@
+{
+  "stretches": [
+    {
+      "stretchId": 1,
+      "stretchName": "Behind Back",
+      "position": "seated",
+      "bodyPart": "shoulders",
+      "img": "/images/5.jpg"
+    },
+    {
+      "stretchId": 2,
+      "stretchName": "Hands on Desk",
+      "position": "seated",
+      "bodyPart": "back",
+      "img": "/images/5.jpg"
+    },
+    {
+      "stretchId": 3,
+      "stretchName": "Chin Tuck",
+      "position": "standing",
+      "bodyPart": "neck",
+      "img": "/images/5.jpg"
+    }
+  ]
+}
