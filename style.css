@@ -313,7 +313,7 @@ input[type="checkbox"]:checked {
 }
 
 /* Media Queries */
-
+/* Small Monitor */
 @media screen and (max-width: 1300px) {
   .main-container {
     border-radius: 10px;
@@ -372,8 +372,8 @@ input[type="checkbox"]:checked {
     background: var(--secCol);
     color: var(--white);
     text-align: center;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    font-size: 1.4rem;
     border: none;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -381,15 +381,14 @@ input[type="checkbox"]:checked {
     transition: 200ms all ease-in;
   }
   .stretch-name {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
   }
 
   .stretch-img-box {
     width: 50%;
-    height: 200px;
+    height: 400px;
     padding: 0.5rem;
-    background: grey;
   }
 
   .stretch-img-box img {
@@ -401,20 +400,19 @@ input[type="checkbox"]:checked {
 
   .stretch-description {
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .tags-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 1rem 0;
   }
 
   .tag-title {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-right: 10px;
   }
 
@@ -424,7 +422,266 @@ input[type="checkbox"]:checked {
     background: var(--primCol);
     border-radius: 5px;
     color: var(--white);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .timer-box {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* iPad horizontal */
+@media screen and (max-width: 1024x) {
+  .main-container {
+    border-radius: 10px;
+    margin: 4vh auto;
+    padding: 1rem 1rem;
+    min-height: 70vh;
+    max-height: 97vh;
+    min-width: 70vw;
+    max-width: 97vw;
+  }
+
+  .callout {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    color: #888;
+    font-size: 1.8rem;
+  }
+
+  .checkbox-header {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
+    color: #333;
+  }
+
+  .positions-form {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 18px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid var(--secCol);
+    line-height: 1.2em;
+    height: 1.2em;
+  }
+  input[type="checkbox"]:checked {
+    background: var(--secCol);
+  }
+
+  .checkbox-item {
+    cursor: pointer;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    background: var(--secCol);
+    color: var(--white);
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 200ms all ease-in;
+  }
+  .stretch-name {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+  }
+
+  .stretch-img-box {
+    width: 50%;
+    height: 300px;
+    padding: 0.5rem;
+  }
+
+  .stretch-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .stretch-description {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  .tags-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .tag-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+
+  .tag {
+    padding: 0.2rem 0.3rem;
+    margin-right: 10px;
+    background: var(--primCol);
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 0.9rem;
+  }
+
+  .timer-box {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* iPad vertical */
+@media screen and (max-width: 500px) {
+  .main-container {
+    border-radius: 10px;
+    margin: 1vh auto;
+    padding: 0.5rem 0.5rem;
+    min-height: 70vh;
+    max-height: 97vh;
+    min-width: 70vw;
+    max-width: 97vw;
+  }
+
+  .callout {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    color: #888;
+    font-size: 1.2rem;
+  }
+
+  .checkbox-header {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
+    color: #333;
+  }
+
+  .positions-form {
+    padding-bottom: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    justify-content: center;
+  }
+
+  .bodyparts-form {
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 15px;
+    /* height: 25px; */
+    background: white;
+    border-radius: 2px;
+    border: 2px solid var(--secCol);
+    line-height: 0.8em;
+  }
+  input[type="checkbox"]:checked {
+    background: var(--secCol);
+  }
+
+  .checkbox-item {
+    cursor: pointer;
+    margin-right: 1rem;
+    height: 1em;
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    background: var(--secCol);
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 200ms all ease-in;
+  }
+
+  .result-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stretch-details {
+    width: 100%;
+    padding: 1rem;
+  }
+  .stretch-name {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .stretch-img-box {
+    width: 100%;
+    height: 400px;
+    padding: 0.5rem;
+  }
+
+  .stretch-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .stretch-description {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  .tags-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .tag-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+
+  .tag {
+    padding: 0.2rem 0.3rem;
+    margin-right: 10px;
+    background: var(--primCol);
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 0.9rem;
   }
 
   .timer-box {
