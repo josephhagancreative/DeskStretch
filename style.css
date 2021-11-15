@@ -560,8 +560,8 @@ input[type="checkbox"]:checked {
 @media screen and (max-width: 500px) {
   .center {
     height: calc(100vh - 50px);
-    padding: 1rem;
   }
+
   .nav-container {
     padding: 0 10px;
     height: 50px;
@@ -583,13 +583,28 @@ input[type="checkbox"]:checked {
   }
 
   .main-container {
-    border-radius: 10px;
-    margin: 1vh auto;
+    margin: 0 auto;
     padding: 0.5rem 0.5rem;
+    padding-top: 200px;
+    border-radius: 10px;
+    min-height: 50vh;
+    max-height: 90vh;
+    min-width: 50vh;
+    max-width: 97vw;
+    overflow: scroll;
+  }
+
+  .content {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .callout {
     font-size: 3rem;
+    line-height: 2.8rem;
+    margin-bottom: 0.5rem;
   }
 
   .subtitle {
@@ -599,7 +614,7 @@ input[type="checkbox"]:checked {
 
   .checkbox-header {
     font-size: 1.6rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.1rem;
     color: #333;
   }
@@ -669,6 +684,7 @@ input[type="checkbox"]:checked {
   .stretch-name {
     margin-bottom: 0.5rem;
     font-size: 2rem;
+    line-height: 2rem;
   }
 
   .stretch-img-box {
@@ -687,10 +703,12 @@ input[type="checkbox"]:checked {
   .stretch-description {
     margin-top: 10px;
     font-size: 1.2rem;
+    line-height: 1.4rem;
   }
 
   .tags-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 1rem 0;
@@ -704,7 +722,7 @@ input[type="checkbox"]:checked {
 
   .tag {
     padding: 0.2rem 0.3rem;
-    margin-right: 10px;
+    margin: 5px;
     background: var(--primCol);
     border-radius: 5px;
     color: var(--white);
