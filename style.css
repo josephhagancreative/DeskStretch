@@ -558,6 +558,9 @@ input[type="checkbox"]:checked {
 
 /* iPad vertical */
 @media screen and (max-width: 500px) {
+  .center {
+    height: calc(100vh - 50px);
+  }
   .nav-container {
     padding: 0 10px;
     height: 50px;
@@ -582,9 +585,6 @@ input[type="checkbox"]:checked {
     border-radius: 10px;
     margin: 1vh auto;
     padding: 0.5rem 0.5rem;
-    max-height: 97vh;
-    min-width: 70vw;
-    max-width: 97vw;
   }
 
   .callout {
