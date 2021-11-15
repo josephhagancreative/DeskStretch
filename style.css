@@ -128,12 +128,13 @@ body {
 
 .main-container {
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 3rem 3rem;
   min-height: 50vh;
   max-height: 90vh;
+  min-width: 50vh;
+  max-width: 70vw;
   background: #fffafab2;
-  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -559,6 +560,7 @@ input[type="checkbox"]:checked {
 @media screen and (max-width: 500px) {
   .center {
     height: calc(100vh - 50px);
+    padding: 1rem;
   }
   .nav-container {
     padding: 0 10px;
