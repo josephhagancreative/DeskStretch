@@ -325,11 +325,11 @@ input[type="checkbox"]:checked {
 @media screen and (max-width: 1300px) {
   .main-container {
     border-radius: 10px;
-    margin: 5vh auto;
+    margin: 0 auto;
     padding: 1rem 1rem;
-    min-height: 70vh;
+    min-height: 80vh;
     max-height: 97vh;
-    min-width: 70vw;
+    min-width: 90vw;
     max-width: 97vw;
   }
 
@@ -445,10 +445,10 @@ input[type="checkbox"]:checked {
     border-radius: 10px;
     margin: 4vh auto;
     padding: 1rem 1rem;
-    min-height: 70vh;
+    /* min-height: 70vh;
     max-height: 97vh;
     min-width: 70vw;
-    max-width: 97vw;
+    max-width: 97vw; */
   }
 
   .callout {
