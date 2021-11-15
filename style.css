@@ -24,7 +24,6 @@ h4 {
 }
 
 body {
-  position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -135,6 +134,7 @@ body {
   min-width: 50vw;
   max-width: 90vw;
   background: #fffafab2;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
